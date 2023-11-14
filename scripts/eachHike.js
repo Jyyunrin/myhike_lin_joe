@@ -32,8 +32,7 @@ function populateReviews() {
     let hikeCardTemplate = document.getElementById("reviewCardTemplate");
     let hikeCardGroup = document.getElementById("reviewCardGroup");
 
-    let params = new URL(window.location.href); // Get the URL from the search bar
-    let hikeID = params.searchParams.get("docID");
+
 
     // Double-check: is your collection called "Reviews" or "reviews"?
     db.collection("reviews")
